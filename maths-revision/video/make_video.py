@@ -127,10 +127,10 @@ def main():
     run(["ffmpeg", "-y", "-loglevel", "error",
          "-f", "concat", "-safe", "0", "-i", "tmp/frames.txt",
          "-i", narr,
-         "-filter_complex", "[1:a]loudnorm=I=-16:TP=-1.5:LRA=11,aresample=44100[a]",
+         "-filter_complex", "[1:a]loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,pan=stereo|c0=c0|c1=c0[a]",
          "-map", "0:v", "-map", "[a]",
          "-c:v", "libx264", "-preset", "medium", "-crf", "22", "-pix_fmt", "yuv420p",
-         "-vf", "fps=25,format=yuv420p", "-c:a", "aac", "-b:a", "160k",
+         "-vf", "fps=25,format=yuv420p", "-c:a", "aac", "-b:a", "192k", "-ac", "2", "-ar", "48000",
          "-movflags", "+faststart", "-shortest", mp4])
 
     print("\nTOTAL RUNTIME: %d min %02d sec" % (sum(durations) // 60, sum(durations) % 60))
