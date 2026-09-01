@@ -1,0 +1,5 @@
+video/tmp/
+video/out/
+build/
+video/__pycache__/
+video/build.log

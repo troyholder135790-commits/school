@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Maths Revision — Factorising &amp; Pythagoras</title>
+<style>
+@page { size: A4; margin: 14mm 13mm 16mm 13mm; }
+* { box-sizing: border-box; }
+body { font-family: "Liberation Serif","DejaVu Serif",serif; font-size: 10.2pt; line-height: 1.42; color:#15181d; margin:0; }
+h1,h2,h3,h4,.tag,.chip,th,.box-t { font-family:"Liberation Sans","DejaVu Sans",sans-serif; }
+h1 { font-size: 25pt; margin:0 0 2mm; letter-spacing:-.5px; }
+h2 { font-size: 15pt; margin: 7mm 0 3mm; padding: 2mm 3mm; background:#16223c; color:#fff; border-radius:2mm; }
+h3 { font-size: 12pt; margin: 5mm 0 1.5mm; color:#16223c; border-bottom:1.6pt solid #d7dce6; padding-bottom:1mm; }
+h4 { font-size:10.5pt; margin:3.5mm 0 1mm; color:#8a2d1c; }
+p { margin: 1.6mm 0; }
+ul,ol { margin: 1.6mm 0 1.6mm 5mm; padding:0; }
+li { margin: .9mm 0; }
+.m { font-family:"DejaVu Serif",serif; font-style:italic; white-space:nowrap; }
+.mb { font-family:"DejaVu Serif",serif; font-style:italic; font-weight:bold; }
+b,strong { color:#0d1220; }
+.pagebreak { page-break-before: always; }
+.avoid { page-break-inside: avoid; }
+
+.cover { text-align:left; border:2.2pt solid #16223c; border-radius:3mm; padding:7mm; margin-bottom:5mm; background:#f7f9fc; }
+.cover .sub { font-size:12pt; color:#41506b; margin-top:1mm; }
+.cover .meta { margin-top:4mm; font-size:9.5pt; color:#41506b; }
+.chip { display:inline-block; background:#16223c; color:#fff; padding:1mm 2.5mm; border-radius:1.5mm; font-size:8.5pt; margin-right:2mm; }
+
+.rule { border-left:3.5pt solid #c8452b; background:#fdf4f1; padding:2.5mm 3mm; margin:2.5mm 0; border-radius:0 2mm 2mm 0; }
+.rule .box-t { font-size:8.6pt; letter-spacing:.9px; text-transform:uppercase; color:#8a2d1c; font-weight:bold; }
+.tip { border-left:3.5pt solid #1d6b4f; background:#f0f8f4; padding:2.5mm 3mm; margin:2.5mm 0; border-radius:0 2mm 2mm 0; }
+.tip .box-t { font-size:8.6pt; letter-spacing:.9px; text-transform:uppercase; color:#1d6b4f; font-weight:bold; }
+.warn { border-left:3.5pt solid #b8860b; background:#fdf9ec; padding:2.5mm 3mm; margin:2.5mm 0; border-radius:0 2mm 2mm 0; }
+.warn .box-t { font-size:8.6pt; letter-spacing:.9px; text-transform:uppercase; color:#7a5a06; font-weight:bold; }
+
+table { border-collapse:collapse; width:100%; margin:2.5mm 0; font-size:9.4pt; }
+th { background:#eef1f7; text-align:left; padding:1.6mm 2.2mm; border:.6pt solid #c3cad8; font-size:9pt; }
+td { padding:1.6mm 2.2mm; border:.6pt solid #c3cad8; vertical-align:top; }
+td.q { width:22%; font-family:"DejaVu Serif",serif; }
+tr:nth-child(even) td { background:#fafbfd; }
+
+.work { background:#f4f6fa; border:.6pt solid #ccd3e0; border-radius:2mm; padding:2.5mm 3mm; margin:2mm 0; font-family:"DejaVu Serif",serif; }
+.work .step { display:block; margin:.7mm 0; }
+.work .note { font-family:"Liberation Sans",sans-serif; font-style:normal; font-size:8.6pt; color:#5a6478; }
+.cmt { font-family:"Liberation Sans","DejaVu Sans",sans-serif; font-size:8.4pt; color:#5a6478; font-style:normal; }
+.ans { background:#fff3cd; border:.8pt solid #d9a441; padding:.4mm 1.4mm; border-radius:1mm; font-weight:bold; }
+
+.frac { display:inline-block; vertical-align:-0.55em; text-align:center; margin:0 .18em; }
+.frac > span { display:block; padding:0 .35em; }
+.frac .num { border-bottom:.9pt solid #15181d; }
+.two { display:flex; gap:5mm; }
+.two > div { flex:1; }
+.sq { font-family:"DejaVu Sans",sans-serif; }
+.flow { display:flex; gap:2mm; margin:3mm 0; }
+.flow div { flex:1; border:1pt solid #16223c; border-radius:2mm; padding:2mm; font-size:8.8pt; font-family:"Liberation Sans",sans-serif; }
+.flow div > b:first-child { display:block; color:#c8452b; font-size:9.6pt; margin-bottom:.8mm; }
+.hd { display:flex; justify-content:space-between; align-items:baseline; border-bottom:2.2pt solid #16223c; padding-bottom:1.5mm; margin-bottom:3mm; }
+.hd .r { font-size:8.6pt; color:#41506b; font-family:"Liberation Sans",sans-serif; }
+svg { display:block; margin: 2mm auto; }
+.glos td:first-child { font-weight:bold; width:30%; }
+.selftest li { margin:1.4mm 0; font-family:"DejaVu Serif",serif; }
+</style></head><body>
+
+<div class="cover">
+  <div><span class="chip">GRADE 9 MATHS</span><span class="chip">EXAM REVISION</span></div>
+  <h1>Factorising &amp; Pythagoras</h1>
+  <div class="sub">Hoofstuk 8 (Faktorisering) &nbsp;•&nbsp; Hoofstuk 13 (Pythagoras) &nbsp;•&nbsp; Exam Focus p164 &amp; p239</div>
+  <div class="meta"><b>Everything you need to pass tomorrow's test.</b> Every rule, every method, and a fully worked solution to every question on the worksheet.<br>
+  Work through Part A → Part B → Part C, then do the 12-question self-test at the end. Answers are on the last page.</div>
+</div>
+
+<h3 style="margin-top:0">How to use this in one evening</h3>
+<table>
+<tr><th style="width:16%">Time</th><th>What to do</th></tr>
+<tr><td><b>0–10 min</b></td><td>Read <b>The Golden Order</b> (page 2) until you can say the 4 steps from memory. This single page decides most of your marks.</td></tr>
+<tr><td><b>10–40 min</b></td><td>Part A: the four factorising rules. Cover the answer, try each worked example yourself first, then check.</td></tr>
+<tr><td><b>40–55 min</b></td><td>Part B: algebraic fractions (factorise top, factorise bottom, cancel <i>brackets</i>).</td></tr>
+<tr><td><b>55–80 min</b></td><td>Part C: Pythagoras — the theorem, the converse, and the acute/obtuse test.</td></tr>
+<tr><td><b>80–95 min</b></td><td>Read <b>Top 10 mistakes</b>, then do the self-test. Anything you get wrong, re-read that rule.</td></tr>
+</table>
+
+<div class="tip"><span class="box-t">The one-sentence summary</span>
+<p><b>Chapter 8:</b> always take out the common factor first, then look at how many terms are left — 2 terms → difference of squares, 3 terms → trinomial, 4 terms → group in pairs.<br>
+<b>Chapter 13:</b> <span class="m">a² + b² = c²</span> where <span class="m">c</span> is always the longest side (the hypotenuse, opposite the right angle). To <i>find</i> the hypotenuse you <b>add</b>; to find a shorter side you <b>subtract</b>.</p></div>
+
+<h3>Bilingual glossary — Afrikaans / English</h3>
+<table class="glos">
+<tr><td>Faktoriseer volledig</td><td>Factorise fully (keep going until nothing factorises further)</td></tr>
+<tr><td>Vereenvoudig</td><td>Simplify</td></tr>
+<tr><td>Gemeenskaplike faktor</td><td>Common factor</td></tr>
+<tr><td>Verskil van twee kwadrate</td><td>Difference of two squares</td></tr>
+<tr><td>Drieterm / Tweeterm</td><td>Trinomial (3 terms) / Binomial (2 terms)</td></tr>
+<tr><td>Wortelvorm</td><td>Surd form (leave the √ sign, do not round off)</td></tr>
+<tr><td>Reghoekige driehoek</td><td>Right-angled triangle</td></tr>
+<tr><td>Skuinssy</td><td>Hypotenuse (longest side)</td></tr>
+<tr><td>Regte hoek</td><td>Right angle (90°)</td></tr>
+<tr><td>Skerphoekig / Stomphoekig</td><td>Acute-angled / Obtuse-angled</td></tr>
+<tr><td>Vierkant / Reghoek</td><td>Square / Rectangle</td></tr>
+<tr><td>Bereken die lengte van</td><td>Calculate the length of</td></tr>
+<tr><td>Toon aan dat</td><td>Show that (you must show the working, not just the answer)</td></tr>
+<tr><td>Korrek tot twee desimale syfers</td><td>Correct to two decimal places</td></tr>
+</table>
+
+<div class="pagebreak"></div>
+<div class="hd"><div><b>PART A</b> — Chapter 8: Factorising</div><div class="r">Hoofstuk 8 · Eksamenfokus bl164</div></div>
+
+<h2>A1. The Golden Order — do these 4 checks, in this order, every time</h2>
+
+<p>Factorising is not guessing. It is a <b>decision tree</b>. Ask the questions in order and stop when the expression is fully broken down.</p>
+
+<div class="flow">
+<div><b>1. Common factor?</b>Take out the HCF of every term — numbers <i>and</i> letters. <b>Always do this first, always.</b></div>
+<div><b>2. Two terms?</b>Difference of two squares:<br><span class="m">a² − b² = (a−b)(a+b)</span></div>
+<div><b>3. Three terms?</b>Trinomial: find two numbers that <b>×</b> to give the last term and <b>+</b> to give the middle.</div>
+<div><b>4. Four terms?</b>Group in pairs, take out a common factor from each pair, then take out the common bracket.</div>
+</div>
+
+<div class="rule"><span class="box-t">"Factorise fully" means keep going</span>
+<p>After you factorise once, <b>look at each bracket again</b> and run the checklist on it. Marks are lost every year for stopping at <span class="m">8(x⁴−1)</span> when <span class="m">x⁴−1</span> still factorises. If a bracket has 2 terms and both are perfect squares, it factorises again.</p></div>
+
+<h2>A2. Rule 1 — Common factor (gemeenskaplike faktor)</h2>
+<p>Find the <b>highest common factor</b> of all terms and write it outside a bracket. Divide each original term by the HCF to get what goes inside.</p>
+<div class="rule"><span class="box-t">Rule</span>
+<p><span class="mb">ka + kb = k(a + b)</span> &nbsp;— for the letters, take the <b>lowest power</b> that appears in every term.</p></div>
+
+<h4>Worked — (d)(1) &nbsp;<span class="m">7x + 14</span></h4>
+<div class="work">
+<span class="step">HCF of 7 and 14 is <b>7</b>. There is no <span class="m">x</span> in the second term, so no letter comes out.</span>
+<span class="step"><span class="m">7x + 14</span> = <span class="m">7(x + 2)</span> &nbsp; <span class="cmt">— check: 7 × x = 7x ✓, 7 × 2 = 14 ✓</span></span>
+<span class="step"><span class="ans">= 7(x + 2)</span></span>
+</div>
+
+<h4>Worked — (d)(7) &nbsp;<span class="m">4a² + 3a</span></h4>
+<div class="work">
+<span class="step">Numbers: HCF of 4 and 3 is 1. Letters: <span class="m">a²</span> and <span class="m">a</span> → lowest power is <span class="m">a</span>.</span>
+<span class="step">So the HCF is <span class="m">a</span>. &nbsp; <span class="m">4a² ÷ a = 4a</span> &nbsp;and&nbsp; <span class="m">3a ÷ a = 3</span>.</span>
+<span class="step"><span class="ans">= a(4a + 3)</span></span>
+</div>
+<div class="warn"><span class="box-t">Watch out</span><p>Don't write <span class="m">a(4a + 3a)</span>. You divide each term by the HCF — you do not just copy it. Multiply back out to check, every time.</p></div>
+
+<h2>A3. Rule 2 — Difference of two squares (verskil van twee kwadrate)</h2>
+<div class="rule"><span class="box-t">Rule</span>
+<p><span class="mb">a² − b² = (a − b)(a + b)</span></p>
+<p>Three conditions, all must be true: <b>(i)</b> exactly two terms, <b>(ii)</b> a <b>minus</b> between them, <b>(iii)</b> both terms are perfect squares.</p>
+<p><b><span class="m">a² + b²</span> does NOT factorise.</b> A <i>sum</i> of two squares is prime. This is a favourite trap question.</p></div>
+
+<p><b>Square roots you must know:</b> <span class="m">√(4m²) = 2m</span>, <span class="m">√(9x²) = 3x</span>, <span class="m">√(25) = 5</span>, <span class="m">√(x⁸) = x⁴</span> (halve the power), <span class="m">√(16y⁶) = 4y³</span>.</p>
+
+<h4>Worked — (d)(10) &nbsp;<span class="m">4m² − 1</span></h4>
+<div class="work">
+<span class="step">Two terms, minus, both perfect squares: <span class="m">√(4m²) = 2m</span>, <span class="m">√1 = 1</span>.</span>
+<span class="step"><span class="ans">= (2m − 1)(2m + 1)</span></span>
+</div>
+
+<h4>Worked — (d)(21) &nbsp;<span class="m">8x⁸ − 8</span> &nbsp;<span class="cmt">(the "factorise fully" trap)</span></h4>
+<div class="work">
+<span class="step"><b>Step 1 — common factor first:</b> HCF is 8. &nbsp; <span class="m">= 8(x⁸ − 1)</span></span>
+<span class="step"><b>Step 2 — the bracket has 2 terms, minus, both squares:</b> <span class="m">= 8(x⁴ − 1)(x⁴ + 1)</span></span>
+<span class="step"><b>Step 3 — look again!</b> <span class="m">x⁴ − 1</span> is <i>still</i> a difference of squares: <span class="m">= 8(x² − 1)(x² + 1)(x⁴ + 1)</span></span>
+<span class="step"><b>Step 4 — look again!</b> <span class="m">x² − 1</span> is <i>still</i> a difference of squares:</span>
+<span class="step"><span class="ans">= 8(x − 1)(x + 1)(x² + 1)(x⁴ + 1)</span></span>
+<span class="step"><span class="cmt">Stop here: <span class="m">x² + 1</span> and <span class="m">x⁴ + 1</span> are SUMS of squares — they do not factorise.</span></span>
+</div>
+
+<h2>A4. Rule 3 — Trinomials <span class="m">x² + bx + c</span> (drieterme)</h2>
+<div class="rule"><span class="box-t">Method</span>
+<p>Find two numbers that <b>multiply to give <span class="m">c</span></b> (the last number) and <b>add to give <span class="m">b</span></b> (the middle number). Then <span class="m">x² + bx + c = (x + first)(x + second)</span>.</p></div>
+
+<h3>The sign table — learn this, it removes all the guessing</h3>
+<table class="avoid">
+<tr><th>Last sign (<span class="m">c</span>)</th><th>Middle sign (<span class="m">b</span>)</th><th>Signs in the brackets</th><th>What the two numbers do</th><th>Example</th></tr>
+<tr><td><b>+</b></td><td><b>+</b></td><td><span class="m">( + )( + )</span> — both plus</td><td>ADD to <span class="m">b</span>, multiply to <span class="m">c</span></td><td><span class="m">x²+12x+27 = (x+3)(x+9)</span></td></tr>
+<tr><td><b>+</b></td><td><b>−</b></td><td><span class="m">( − )( − )</span> — both minus</td><td>ADD to <span class="m">b</span>, multiply to <span class="m">c</span></td><td><span class="m">k²−12k+27 = (k−3)(k−9)</span></td></tr>
+<tr><td><b>−</b></td><td><b>+</b></td><td><span class="m">( + )( − )</span> — one of each</td><td>SUBTRACT to <span class="m">b</span>; the <b>bigger</b> number is <b>+</b></td><td><span class="m">a²+6a−27 = (a+9)(a−3)</span></td></tr>
+<tr><td><b>−</b></td><td><b>−</b></td><td><span class="m">( + )( − )</span> — one of each</td><td>SUBTRACT to <span class="m">b</span>; the <b>bigger</b> number is <b>−</b></td><td><span class="m">y²−6y−27 = (y−9)(y+3)</span></td></tr>
+</table>
+<div class="tip"><span class="box-t">Shortcut to remember it</span><p><b>Last sign PLUS</b> → both brackets get the <b>middle sign</b>, and the numbers <b>add up</b> to the middle number.<br>
+<b>Last sign MINUS</b> → the brackets get <b>one plus and one minus</b>, the numbers have a <b>difference</b> equal to the middle number, and the <b>bigger number takes the middle sign</b>.</p></div>
+
+<p><b>Factor pairs of 27</b> (used in all four questions below): <span class="m">1 × 27</span> and <span class="m">3 × 9</span>. Since we need 12 or 6 from them: <span class="m">3 + 9 = 12</span> and <span class="m">9 − 3 = 6</span>.</p>
+
+<div class="two"><div>
+<h4>(d)(22) &nbsp;<span class="m">x² + 12x + 27</span></h4>
+<div class="work">
+<span class="step">Last <b>+</b>, middle <b>+</b> → both brackets <b>+</b>.</span>
+<span class="step">Need: × = 27, + = 12 → <b>3 and 9</b>.</span>
+<span class="step"><span class="ans">= (x + 3)(x + 9)</span></span>
+</div>
+<h4>(d)(24) &nbsp;<span class="m">a² + 6a − 27</span></h4>
+<div class="work">
+<span class="step">Last <b>−</b> → one <b>+</b>, one <b>−</b>.</span>
+<span class="step">Need: × = 27, difference = 6 → <b>9 and 3</b>.</span>
+<span class="step">Middle is <b>+</b>, so the bigger (9) is <b>+</b>.</span>
+<span class="step"><span class="ans">= (a + 9)(a − 3)</span></span>
+</div>
+</div><div>
+<h4>(d)(23) &nbsp;<span class="m">k² − 12k + 27</span></h4>
+<div class="work">
+<span class="step">Last <b>+</b>, middle <b>−</b> → both brackets <b>−</b>.</span>
+<span class="step">Need: × = 27, + = 12 → <b>3 and 9</b>.</span>
+<span class="step"><span class="ans">= (k − 3)(k − 9)</span></span>
+</div>
+<h4>(d)(25) &nbsp;<span class="m">y² − 6y − 27</span></h4>
+<div class="work">
+<span class="step">Last <b>−</b> → one <b>+</b>, one <b>−</b>.</span>
+<span class="step">Need: × = 27, difference = 6 → <b>9 and 3</b>.</span>
+<span class="step">Middle is <b>−</b>, so the bigger (9) is <b>−</b>.</span>
+<span class="step"><span class="ans">= (y − 9)(y + 3)</span></span>
+</div>
+</div></div>
+<div class="warn"><span class="box-t">Always check by multiplying back</span><p>FOIL <span class="m">(y − 9)(y + 3) = y² + 3y − 9y − 27 = y² − 6y − 27</span> ✓. This takes 5 seconds and catches every sign error.</p></div>
+
+<div class="pagebreak"></div>
+<h2>A5. Rule 4 — Common bracket &amp; grouping (four terms)</h2>
+
+<div class="rule"><span class="box-t">Rule 4a — a bracket can be a common factor</span>
+<p>If the same bracket appears in every term, take the whole bracket out:<br>
+<span class="mb">4x(a+b) + 3(a+b) = (a+b)(4x + 3)</span></p></div>
+
+<h4>Worked — (e)(1) &nbsp;<span class="m">4x(a + b) + 3(a + b)</span></h4>
+<div class="work">
+<span class="step">The bracket <span class="m">(a + b)</span> is in both terms → it is the common factor.</span>
+<span class="step">What is left over: <span class="m">4x</span> from the first term, <span class="m">+3</span> from the second.</span>
+<span class="step"><span class="ans">= (a + b)(4x + 3)</span></span>
+</div>
+
+<div class="rule"><span class="box-t">Rule 4b — the sign-flip trick (VERY important)</span>
+<p><span class="mb">(1 − x) = −(x − 1)</span> &nbsp;&nbsp; <span class="mb">(−4 − x) = −(x + 4)</span> &nbsp;&nbsp; <span class="mb">(b − a) = −(a − b)</span></p>
+<p>If two brackets are the <b>same but backwards</b>, take a <b>−1</b> out of one of them to make them match. Then you can factorise.</p></div>
+
+<h4>Worked — (e)(4) &nbsp;<span class="m">x²(x − 1) + 4(1 − x)</span></h4>
+<div class="work">
+<span class="step">The brackets are backwards: <span class="m">(x − 1)</span> vs <span class="m">(1 − x)</span>.</span>
+<span class="step"><b>Flip the second:</b> <span class="m">4(1 − x) = −4(x − 1)</span></span>
+<span class="step"><span class="m">= x²(x − 1) − 4(x − 1)</span> &nbsp;<span class="cmt">— now the brackets match</span></span>
+<span class="step">Take out <span class="m">(x − 1)</span>: &nbsp;<span class="m">= (x − 1)(x² − 4)</span></span>
+<span class="step"><b>Factorise fully!</b> <span class="m">x² − 4</span> is a difference of two squares.</span>
+<span class="step"><span class="ans">= (x − 1)(x − 2)(x + 2)</span></span>
+</div>
+
+<h4>Worked — Page 2, (5) &nbsp;<span class="m">x²(x + 4) + 9(−4 − x)</span></h4>
+<div class="work">
+<span class="step"><span class="m">(−4 − x) = −(4 + x) = −(x + 4)</span> &nbsp;<span class="cmt">— take out −1, then reorder</span></span>
+<span class="step"><span class="m">= x²(x + 4) − 9(x + 4)</span></span>
+<span class="step"><span class="m">= (x + 4)(x² − 9)</span> &nbsp;<span class="cmt">— difference of squares in the bracket</span></span>
+<span class="step"><span class="ans">= (x + 4)(x − 3)(x + 3)</span></span>
+</div>
+
+<div class="rule"><span class="box-t">Rule 4c — grouping four terms in pairs</span>
+<p><b>Step 1:</b> split into two pairs. <b>Step 2:</b> take a common factor out of each pair. <b>Step 3:</b> the two brackets left must be identical — take that bracket out.</p>
+<p>If the brackets are <i>not</i> identical, either re-pair the terms differently, or take out a negative from the second pair.</p></div>
+
+<h4>Worked — (e)(7) &nbsp;<span class="m">ax + 3a + bx + 3b</span></h4>
+<div class="work">
+<span class="step">Pair them: <span class="m">(ax + 3a) + (bx + 3b)</span></span>
+<span class="step">Common factor of pair 1 is <span class="m">a</span>; of pair 2 is <span class="m">b</span>:</span>
+<span class="step"><span class="m">= a(x + 3) + b(x + 3)</span> &nbsp;<span class="cmt">— the brackets match ✓</span></span>
+<span class="step">Take out <span class="m">(x + 3)</span>:</span>
+<span class="step"><span class="ans">= (x + 3)(a + b)</span></span>
+</div>
+<div class="tip"><span class="box-t">If the pairs don't match</span><p>Try the other pairing: <span class="m">(ax + bx) + (3a + 3b) = x(a + b) + 3(a + b) = (a + b)(x + 3)</span> — the same answer. Order of brackets doesn't matter.</p></div>
+
+<h2>A6. Chapter 8 — complete answer list</h2>
+<table>
+<tr><th style="width:6%">No.</th><th style="width:32%">Question</th><th style="width:30%">Answer</th><th>Rule used</th></tr>
+<tr><td>(d)1</td><td class="q">7x + 14</td><td class="q"><b>7(x + 2)</b></td><td>Common factor</td></tr>
+<tr><td>(d)7</td><td class="q">4a² + 3a</td><td class="q"><b>a(4a + 3)</b></td><td>Common factor (letters only)</td></tr>
+<tr><td>(d)10</td><td class="q">4m² − 1</td><td class="q"><b>(2m − 1)(2m + 1)</b></td><td>Difference of squares</td></tr>
+<tr><td>(d)21</td><td class="q">8x⁸ − 8</td><td class="q"><b>8(x−1)(x+1)(x²+1)(x⁴+1)</b></td><td>Common factor, then diff. of squares × 3</td></tr>
+<tr><td>(d)22</td><td class="q">x² + 12x + 27</td><td class="q"><b>(x + 3)(x + 9)</b></td><td>Trinomial (+ +)</td></tr>
+<tr><td>(d)23</td><td class="q">k² − 12k + 27</td><td class="q"><b>(k − 3)(k − 9)</b></td><td>Trinomial (− −)</td></tr>
+<tr><td>(d)24</td><td class="q">a² + 6a − 27</td><td class="q"><b>(a + 9)(a − 3)</b></td><td>Trinomial (+ −), bigger is +</td></tr>
+<tr><td>(d)25</td><td class="q">y² − 6y − 27</td><td class="q"><b>(y − 9)(y + 3)</b></td><td>Trinomial (+ −), bigger is −</td></tr>
+<tr><td>(e)1</td><td class="q">4x(a+b) + 3(a+b)</td><td class="q"><b>(a + b)(4x + 3)</b></td><td>Common bracket</td></tr>
+<tr><td>(e)4</td><td class="q">x²(x−1) + 4(1−x)</td><td class="q"><b>(x − 1)(x − 2)(x + 2)</b></td><td>Sign flip → common bracket → diff. squares</td></tr>
+<tr><td>(e)7</td><td class="q">ax + 3a + bx + 3b</td><td class="q"><b>(x + 3)(a + b)</b></td><td>Grouping in pairs</td></tr>
+<tr><td>p2 (5)</td><td class="q">x²(x+4) + 9(−4−x)</td><td class="q"><b>(x + 4)(x − 3)(x + 3)</b></td><td>Sign flip → common bracket → diff. squares</td></tr>
+</table>
+
+<div class="pagebreak"></div>
+<div class="hd"><div><b>PART B</b> — Simplifying algebraic fractions</div><div class="r">Vereenvoudig</div></div>
+
+<h2>B1. The method — three steps, never anything else</h2>
+<div class="rule"><span class="box-t">Method</span>
+<ol style="margin-bottom:0">
+<li><b>Factorise the top</b> (numerator) completely.</li>
+<li><b>Factorise the bottom</b> (denominator) completely.</li>
+<li><b>Cancel whole brackets / whole factors</b> that appear top and bottom.</li>
+</ol></div>
+<div class="warn"><span class="box-t">The golden rule of cancelling</span>
+<p>You may <b>only cancel factors</b> (things being <b>multiplied</b>). You may <b>never cancel terms</b> (things being <b>added or subtracted</b>).</p>
+<p><span class="m"><span class="frac"><span class="num">x + 3</span><span>x</span></span></span> — you <b>cannot</b> cancel the <span class="m">x</span>'s. &nbsp;&nbsp;
+<span class="m"><span class="frac"><span class="num">(x+3)(x−1)</span><span>(x−1)</span></span> = x + 3</span> — you <b>can</b> cancel the bracket. ✓</p></div>
+
+<h4>Worked — (i)(2) &nbsp;<span class="m"><span class="frac"><span class="num">x³y − 4xy²</span><span>x²y²</span></span></span></h4>
+<div class="work">
+<span class="step"><b>Top:</b> common factor of <span class="m">x³y</span> and <span class="m">4xy²</span> is <span class="m">xy</span> → <span class="m">xy(x² − 4y)</span></span>
+<span class="step"><b>Bottom:</b> <span class="m">x²y² = xy · xy</span></span>
+<span class="step"><span class="m"><span class="frac"><span class="num">xy(x² − 4y)</span><span>x²y²</span></span></span> → cancel one <span class="m">x</span> and one <span class="m">y</span></span>
+<span class="step"><span class="ans">= <span class="m"><span class="frac"><span class="num">x² − 4y</span><span>xy</span></span></span></span></span>
+<span class="step"><span class="cmt">Do NOT cancel further — <span class="m">x² − 4y</span> is a subtraction, not a product.</span></span>
+</div>
+
+<h4>Worked — (i)(3) &nbsp;<span class="m"><span class="frac"><span class="num">x² − 9</span><span>x² − 3x</span></span></span></h4>
+<div class="work">
+<span class="step"><b>Top:</b> difference of squares → <span class="m">(x − 3)(x + 3)</span></span>
+<span class="step"><b>Bottom:</b> common factor <span class="m">x</span> → <span class="m">x(x − 3)</span></span>
+<span class="step"><span class="m"><span class="frac"><span class="num">(x − 3)(x + 3)</span><span>x(x − 3)</span></span></span> → cancel <span class="m">(x − 3)</span></span>
+<span class="step"><span class="ans">= <span class="m"><span class="frac"><span class="num">x + 3</span><span>x</span></span></span></span></span>
+</div>
+
+<h4>Worked — (i)(4) &nbsp;<span class="m"><span class="frac"><span class="num">x² − 14x + 24</span><span>x² − 11x − 12</span></span></span></h4>
+<div class="work">
+<span class="step"><b>Top:</b> × = 24, + = 14, both signs <b>−</b> → <span class="m">2 and 12</span> → <span class="m">(x − 2)(x − 12)</span></span>
+<span class="step"><b>Bottom:</b> last is <b>−</b> → one + one −; × = 12, difference = 11 → <span class="m">12 and 1</span>; middle is <b>−</b> so bigger is − → <span class="m">(x − 12)(x + 1)</span></span>
+<span class="step"><span class="m"><span class="frac"><span class="num">(x − 2)(x − 12)</span><span>(x − 12)(x + 1)</span></span></span> → cancel <span class="m">(x − 12)</span></span>
+<span class="step"><span class="ans">= <span class="m"><span class="frac"><span class="num">x − 2</span><span>x + 1</span></span></span></span></span>
+</div>
+
+<h4>Worked — (i)(5) &nbsp;<span class="m"><span class="frac"><span class="num">x² − 14x</span><span>x² − 16x + 28</span></span></span></h4>
+<div class="work">
+<span class="step"><b>Top:</b> common factor <span class="m">x</span> → <span class="m">x(x − 14)</span></span>
+<span class="step"><b>Bottom:</b> × = 28, + = 16, both <b>−</b> → <span class="m">2 and 14</span> → <span class="m">(x − 14)(x − 2)</span></span>
+<span class="step"><span class="m"><span class="frac"><span class="num">x(x − 14)</span><span>(x − 14)(x − 2)</span></span></span> → cancel <span class="m">(x − 14)</span></span>
+<span class="step"><span class="ans">= <span class="m"><span class="frac"><span class="num">x</span><span>x − 2</span></span></span></span></span>
+</div>
+
+<div class="tip"><span class="box-t">Exam habit</span><p>If the top and bottom don't share a bracket after factorising, you have probably made a sign mistake in one of the trinomials — go back and check. These questions are <i>designed</i> to cancel.</p></div>
+
+<div class="pagebreak"></div>
+<div class="hd"><div><b>PART C</b> — Chapter 13: Pythagoras</div><div class="r">Hoofstuk 13 · Eksamenfokus bl239</div></div>
+
+<h2>C1. The Theorem of Pythagoras</h2>
+<div class="rule"><span class="box-t">The theorem</span>
+<p>In a right-angled triangle, <b>the square on the hypotenuse equals the sum of the squares on the other two sides</b>:</p>
+<p style="text-align:center;font-size:14pt"><span class="mb">a² + b² = c²</span></p>
+<p>where <span class="m">c</span> is the <b>hypotenuse</b> — the side <b>opposite the right angle</b>, and always the <b>longest</b> side.</p></div>
+
+<svg width="330" height="150" viewBox="0 0 330 150">
+  <polygon points="40,125 250,125 40,25" fill="#eef1f7" stroke="#16223c" stroke-width="2.2"/>
+  <rect x="40" y="107" width="18" height="18" fill="none" stroke="#c8452b" stroke-width="2"/>
+  <text x="140" y="143" font-family="DejaVu Sans" font-size="15" fill="#15181d">b</text>
+  <text x="22" y="80" font-family="DejaVu Sans" font-size="15" fill="#15181d">a</text>
+  <text x="155" y="66" font-family="DejaVu Sans" font-size="15" fill="#c8452b" font-weight="bold">c = hypotenuse</text>
+</svg>
+
+<div class="rule"><span class="box-t">Which operation? Add or subtract?</span>
+<table style="margin:0">
+<tr><th style="width:38%">What you are looking for</th><th>What you do</th><th>Formula</th></tr>
+<tr><td><b>The hypotenuse</b> (longest side, opposite 90°)</td><td><b>ADD</b> the two squares, then √</td><td><span class="m">c = √(a² + b²)</span></td></tr>
+<tr><td><b>A shorter side</b> (a leg)</td><td><b>SUBTRACT</b> the smaller square from the hypotenuse squared, then √</td><td><span class="m">a = √(c² − b²)</span></td></tr>
+</table></div>
+<div class="warn"><span class="box-t">The #1 Pythagoras mistake</span><p>Adding when you should subtract. <b>Before you calculate, ask: is the side I want the longest side of that triangle?</b> If yes → add. If no → subtract. A shorter side can never come out bigger than the hypotenuse — if it does, you added by mistake.</p></div>
+
+<h3>Surd form vs decimals (wortelvorm)</h3>
+<ul>
+<li><b>"Leave your answer in surd form" / "gee jou antwoord in wortelvorm"</b> → keep the √ sign, do not round. Simplify it if you can: <span class="m">√98 = √(49 × 2) = 7√2</span>.</li>
+<li><b>"Correct to two decimal places"</b> → use the calculator and round: <span class="m">√87 = 9.327... ≈ 9.33</span>.</li>
+<li>To simplify a surd, split off the largest <b>perfect square</b> factor: <span class="m">√50 = √25·√2 = 5√2</span>, <span class="m">√72 = √36·√2 = 6√2</span>, <span class="m">√12 = 2√3</span>, <span class="m">√98 = 7√2</span>.</li>
+</ul>
+
+<h3>Perfect squares &amp; Pythagorean triples worth memorising</h3>
+<p><b>Squares:</b> 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400.</p>
+<p><b>Triples</b> (and their multiples) — spotting these saves time: <b>3,4,5</b> · <b>5,12,13</b> · <b>8,15,17</b> · <b>7,24,25</b> · <b>20,21,29</b>.<br>
+Multiples count too: <span class="m">(5,12,13) × 4 = (20,48,52)</span> and <span class="m">(20,21,29) × 4 = (80,84,116)</span> — both appear on this worksheet!</p>
+
+<h2>C2. Two-triangle problems — Exercise 13.1 (d)(1)</h2>
+<p><b>The rule:</b> when two right-angled triangles share a side, <b>solve the triangle where you know two sides first</b>, then use that answer in the second triangle.</p>
+
+<svg width="330" height="200" viewBox="0 0 330 200">
+  <polygon points="45,175 205,175 90,40" fill="#eef1f7" stroke="#16223c" stroke-width="2"/>
+  <polygon points="45,175 90,40 165,95" fill="#f7f9fc" stroke="#16223c" stroke-width="0"/>
+  <line x1="45" y1="175" x2="90" y2="40" stroke="#16223c" stroke-width="2"/>
+  <line x1="45" y1="175" x2="165" y2="95" stroke="#c8452b" stroke-width="2.4"/>
+  <line x1="90" y1="40" x2="165" y2="95" stroke="#16223c" stroke-width="2"/>
+  <line x1="165" y1="95" x2="205" y2="175" stroke="#16223c" stroke-width="2"/>
+  <rect x="187" y="157" width="18" height="18" fill="none" stroke="#c8452b" stroke-width="1.8" transform="rotate(0 196 166)"/>
+  <polyline points="155.3,87.9 145.4,94.6 155.0,101.7" fill="none" stroke="#c8452b" stroke-width="1.8"/>
+  <text x="30" y="182" font-family="DejaVu Sans" font-size="14">A</text>
+  <text x="83" y="34" font-family="DejaVu Sans" font-size="14">D</text>
+  <text x="170" y="90" font-family="DejaVu Sans" font-size="14">C</text>
+  <text x="210" y="182" font-family="DejaVu Sans" font-size="14">B</text>
+  <text x="52" y="100" font-family="DejaVu Sans" font-size="13" fill="#1d6b4f">16</text>
+  <text x="130" y="60" font-family="DejaVu Sans" font-size="13" fill="#1d6b4f">y</text>
+  <text x="100" y="140" font-family="DejaVu Sans" font-size="13" fill="#c8452b">x</text>
+  <text x="192" y="130" font-family="DejaVu Sans" font-size="13" fill="#1d6b4f">5</text>
+  <text x="120" y="190" font-family="DejaVu Sans" font-size="13" fill="#1d6b4f">12</text>
+</svg>
+<p style="text-align:center" class="cmt">Right angles at <b>B</b> (in △ABC) and at <b>C</b> (in △ADC). AB = 12, BC = 5, AD = 16.</p>
+
+<h4>Find <span class="m">x</span> (= AC) — use △ABC</h4>
+<div class="work">
+<span class="step">Right angle is at B, so <b>AC is the hypotenuse</b> → <b>ADD</b>.</span>
+<span class="step"><span class="m">AC² = AB² + BC²</span></span>
+<span class="step"><span class="m">x² = 12² + 5² = 144 + 25 = 169</span></span>
+<span class="step"><span class="m">x = √169</span> &nbsp; <span class="ans">x = 13</span> &nbsp;<span class="cmt">(the 5–12–13 triple)</span></span>
+</div>
+
+<h4>Find <span class="m">y</span> (= DC) — use △ADC</h4>
+<div class="work">
+<span class="step">Right angle is at C, so <b>AD (16) is the hypotenuse</b>, and DC is a shorter side → <b>SUBTRACT</b>.</span>
+<span class="step"><span class="m">AD² = DC² + AC²</span> &nbsp;→&nbsp; <span class="m">16² = y² + 13²</span></span>
+<span class="step"><span class="m">y² = 256 − 169 = 87</span></span>
+<span class="step"><span class="m">y = √87</span> &nbsp; <span class="ans">y ≈ 9.33</span> &nbsp;<span class="cmt">(2 d.p.; in surd form √87 — 87 = 3 × 29 has no square factor, so it cannot simplify)</span></span>
+</div>
+<div class="tip"><span class="box-t">Notice</span><p>You could not find <span class="m">y</span> first — △ADC only had one known side until <span class="m">x</span> gave you the second. <b>Always look for the triangle with two known sides.</b></p></div>
+
+<div class="pagebreak"></div>
+<h2>C3. The CONVERSE of Pythagoras — proving a right angle</h2>
+<div class="rule"><span class="box-t">Converse</span>
+<p>If the square on the longest side <b>equals</b> the sum of the squares on the other two sides, then the triangle <b>is right-angled</b>, and the right angle is <b>opposite the longest side</b>.</p></div>
+
+<div class="tip"><span class="box-t">How to lay out a "show that" answer (this is how marks are awarded)</span>
+<ol style="margin-bottom:0">
+<li>Identify the <b>longest side</b>.</li>
+<li>Work out <b>LHS</b> = (longest side)².</li>
+<li>Work out <b>RHS</b> = (short side)² + (other short side)².</li>
+<li>Write <b>LHS = RHS</b>.</li>
+<li>Conclude: <b>∴ △ABC is right-angled</b> (converse of Pythagoras), and <b>∴ the right angle is at ___</b> — the vertex <b>opposite the longest side</b>.</li>
+</ol></div>
+
+<h4>13.2 (a)(1) — In △ABC: AB = 20, BC = 48, AC = 52</h4>
+<div class="work">
+<span class="step">Longest side = <b>AC = 52</b>.</span>
+<span class="step">LHS: <span class="m">AC² = 52² = 2704</span></span>
+<span class="step">RHS: <span class="m">AB² + BC² = 20² + 48² = 400 + 2304 = 2704</span></span>
+<span class="step"><span class="m">∴ AC² = AB² + BC²</span></span>
+<span class="step"><span class="ans">∴ △ABC is right-angled, with the right angle at B</span> &nbsp;<span class="cmt">— B is opposite AC (converse of Pythagoras)</span></span>
+<span class="step"><span class="cmt">Sketch: a triangle with a square-corner mark at B, 20 and 48 on the sides meeting at B, 52 across from B.</span></span>
+</div>
+
+<h4>13.2 (a)(2) — In △ABC: c = 17, b = 8, a = 15</h4>
+<div class="work">
+<span class="step"><span class="cmt">Small letters name the side <b>opposite</b> the matching capital: a is opposite A, b opposite B, c opposite C.</span></span>
+<span class="step">Longest side = <b>c = 17</b>.</span>
+<span class="step">LHS: <span class="m">c² = 17² = 289</span></span>
+<span class="step">RHS: <span class="m">a² + b² = 15² + 8² = 225 + 64 = 289</span></span>
+<span class="step"><span class="m">∴ c² = a² + b²</span></span>
+<span class="step"><span class="ans">∴ △ABC is right-angled, with the right angle at C</span> &nbsp;<span class="cmt">— C is opposite side c, the longest side (the 8–15–17 triple)</span></span>
+</div>
+
+<h2>C4. Acute-angled or obtuse-angled? (skerphoekig of stomphoekig)</h2>
+<div class="rule"><span class="box-t">The test — compare (longest side)² with the sum of the other two squares</span>
+<table style="margin:0">
+<tr><th style="width:34%">If…</th><th>Then the triangle is…</th><th>Where is the special angle?</th></tr>
+<tr><td><span class="m">c² = a² + b²</span></td><td><b>Right-angled</b> (reghoekig)</td><td>90° opposite the longest side</td></tr>
+<tr><td><span class="m">c² &lt; a² + b²</span></td><td><b>Acute-angled</b> (skerphoekig) — all angles &lt; 90°</td><td>—</td></tr>
+<tr><td><span class="m">c² &gt; a² + b²</span></td><td><b>Obtuse-angled</b> (stomphoekig)</td><td>The obtuse angle is <b>opposite the longest side</b></td></tr>
+</table></div>
+<div class="tip"><span class="box-t">How to remember</span><p>The <b>bigger</b> the longest side is compared to the other two, the more it is "stretched open" — so <b>bigger c² → bigger (obtuse) angle</b>. Small c² → the angle closes up → acute.</p></div>
+
+<h4>13.2 (b)(1) — In △ABC: AB = 24, BC = 14, AC = 27</h4>
+<div class="work">
+<span class="step">Longest side = <b>AC = 27</b>. &nbsp; It is opposite <b>B</b>.</span>
+<span class="step"><span class="m">AC² = 27² = 729</span></span>
+<span class="step"><span class="m">AB² + BC² = 24² + 14² = 576 + 196 = 772</span></span>
+<span class="step"><span class="m">729 &lt; 772</span>, so <span class="m">AC² &lt; AB² + BC²</span></span>
+<span class="step"><span class="ans">∴ △ABC is acute-angled</span> &nbsp;<span class="cmt">(all three angles are less than 90°, so there is no obtuse angle to name)</span></span>
+</div>
+
+<h4>13.2 (b)(2) — In △DEF: d = 8, e = 18, f = 13</h4>
+<div class="work">
+<span class="step">Longest side = <b>e = 18</b>. &nbsp; Side <span class="m">e</span> is opposite <b>E</b>.</span>
+<span class="step"><span class="m">e² = 18² = 324</span></span>
+<span class="step"><span class="m">d² + f² = 8² + 13² = 64 + 169 = 233</span></span>
+<span class="step"><span class="m">324 &gt; 233</span>, so <span class="m">e² &gt; d² + f²</span></span>
+<span class="step"><span class="ans">∴ △DEF is obtuse-angled, and the obtuse angle is Ê</span> &nbsp;<span class="cmt">(the angle at E, opposite the longest side)</span></span>
+</div>
+
+<div class="pagebreak"></div>
+<h2>C5. Exam Focus p239 — squares and rectangles</h2>
+
+<div class="rule"><span class="box-t">Facts you must know about squares and rectangles</span>
+<ul style="margin-bottom:0">
+<li>All four angles are <b>90°</b>, so <b>a diagonal always creates a right-angled triangle</b> — that is your Pythagoras triangle.</li>
+<li>In a <b>square</b>, all four sides are equal. Diagonal of a square of side <span class="m">s</span> is <span class="m">s√2</span>.</li>
+<li>In a <b>rectangle</b>, opposite sides are equal.</li>
+<li><b>The diagonals of a rectangle are equal AND they bisect each other</b> (cut each other in half). So if they meet at E: <span class="m">AE = EC = BE = ED = ½ × diagonal</span>.</li>
+</ul></div>
+
+<h4>(b) ABCD is a square with side 7 cm. Calculate BD, in surd form.</h4>
+<div class="work">
+<span class="step">BD is a diagonal → it makes right-angled △ABD (right angle at A).</span>
+<span class="step">All sides of a square are equal, so <span class="m">AB = AD = 7</span> cm.</span>
+<span class="step">BD is opposite the right angle → BD is the hypotenuse → <b>ADD</b>.</span>
+<span class="step"><span class="m">BD² = AB² + AD² = 7² + 7² = 49 + 49 = 98</span></span>
+<span class="step"><span class="m">BD = √98 = √(49 × 2) = √49 × √2</span></span>
+<span class="step"><span class="ans">BD = 7√2 cm</span> &nbsp;<span class="cmt">— surd form: do NOT write 9.90</span></span>
+</div>
+
+<h4>(c) ABCD is a rectangle, AD = 84 and AB = 80. Calculate AE.</h4>
+<div class="work">
+<span class="step">E is where the diagonals cross, so <span class="m">AE = ½ AC</span>. <b>First find the whole diagonal AC.</b></span>
+<span class="step">△ABC has a right angle at B, with <span class="m">AB = 80</span> and <span class="m">BC = AD = 84</span> <span class="cmt">(opposite sides of a rectangle are equal)</span>.</span>
+<span class="step">AC is the hypotenuse → <b>ADD</b>:</span>
+<span class="step"><span class="m">AC² = 80² + 84² = 6400 + 7056 = 13456</span></span>
+<span class="step"><span class="m">AC = √13456 = 116</span> &nbsp;<span class="cmt">(it's the 20–21–29 triple × 4)</span></span>
+<span class="step">The diagonals of a rectangle bisect each other:</span>
+<span class="step"><span class="m">AE = ½ × 116</span> &nbsp; <span class="ans">AE = 58</span></span>
+</div>
+<div class="warn"><span class="box-t">Don't stop early</span><p>The question asks for <b>AE</b>, not AC. Finding 116 and writing that down loses the last mark. <b>Underline what the question actually asks for before you start.</b></p></div>
+
+<h2>Top 10 mistakes to avoid tomorrow</h2>
+<table>
+<tr><th style="width:5%">#</th><th style="width:47%">The mistake</th><th>The fix</th></tr>
+<tr><td>1</td><td>Not taking out the common factor first.</td><td>Common factor is <b>always</b> check number 1.</td></tr>
+<tr><td>2</td><td>Stopping too early on "factorise <b>fully</b>" — e.g. leaving <span class="m">8(x⁴ − 1)</span>.</td><td>Re-check every bracket after each step.</td></tr>
+<tr><td>3</td><td>Trying to factorise <span class="m">a² + b²</span> (a sum of squares).</td><td>It doesn't factorise. Only the <b>minus</b> version does.</td></tr>
+<tr><td>4</td><td>Sign errors in trinomials.</td><td>Use the sign table, then FOIL back to check.</td></tr>
+<tr><td>5</td><td>Not spotting <span class="m">(1 − x) = −(x − 1)</span>.</td><td>Backwards brackets → take out −1 to match them.</td></tr>
+<tr><td>6</td><td>Cancelling <b>terms</b> in a fraction instead of <b>factors</b>.</td><td>Cancel only complete brackets/products.</td></tr>
+<tr><td>7</td><td>Adding in Pythagoras when you should subtract.</td><td>Ask first: "is the side I want the hypotenuse?"</td></tr>
+<tr><td>8</td><td>Forgetting to take the square root at the end.</td><td>You found <span class="m">x²</span>, not <span class="m">x</span>. Finish the job.</td></tr>
+<tr><td>9</td><td>Rounding when it says surd form (or vice versa).</td><td>"Wortelvorm" = keep √. "2 decimal places" = round.</td></tr>
+<tr><td>10</td><td>Answering the wrong quantity (AC instead of AE).</td><td>Underline what is asked before starting.</td></tr>
+</table>
+
+<div class="pagebreak"></div>
+<h2>Self-test — 12 questions, 20 minutes, no notes</h2>
+<p class="cmt">Cover the answers at the bottom. Aim for 10/12. Anything you miss, go straight back to that rule.</p>
+<ol class="selftest">
+<li>Factorise: 5x + 20</li>
+<li>Factorise: 6p² + 9p</li>
+<li>Factorise fully: 3x² − 27</li>
+<li>Factorise: x² + 10x + 21</li>
+<li>Factorise: m² − 4m − 21</li>
+<li>Factorise: t² − 10t + 21</li>
+<li>Factorise: 5a(x − 2) − 3(2 − x)</li>
+<li>Factorise: pq + 4p + 5q + 20</li>
+<li>Simplify: (x² − 25) ÷ (x² + 5x)</li>
+<li>A right-angled triangle has legs 9 and 12. Find the hypotenuse.</li>
+<li>In △PQR, PQ = 9, QR = 40, PR = 41. Show it is right-angled and state which angle is 90°.</li>
+<li>A square has side 5 cm. Find its diagonal in surd form.</li>
+</ol>
+
+<h3>Answers</h3>
+<table>
+<tr><td><b>1.</b> 5(x + 4)</td><td><b>2.</b> 3p(2p + 3)</td><td><b>3.</b> 3(x − 3)(x + 3)</td></tr>
+<tr><td><b>4.</b> (x + 3)(x + 7)</td><td><b>5.</b> (m − 7)(m + 3)</td><td><b>6.</b> (t − 3)(t − 7)</td></tr>
+<tr><td><b>7.</b> (x − 2)(5a + 3)&nbsp;<span class="cmt">[−3(2−x) = +3(x−2)]</span></td><td><b>8.</b> (q + 4)(p + 5)</td><td><b>9.</b> (x − 5)/x</td></tr>
+<tr><td><b>10.</b> 15&nbsp;<span class="cmt">[3-4-5 × 3]</span></td><td><b>11.</b> 81 + 1600 = 1681 = 41² ∴ right-angled, 90° at Q</td><td><b>12.</b> 5√2 cm</td></tr>
+</table>
+
+<div class="tip" style="margin-top:8mm"><span class="box-t">Final 60 seconds before the test</span>
+<p><b>Factorising:</b> Common factor → 2 terms (difference of squares) → 3 terms (trinomial + sign table) → 4 terms (grouping). Then <b>check every bracket again</b>.</p>
+<p><b>Fractions:</b> Factorise top, factorise bottom, cancel <b>brackets</b> only.</p>
+<p><b>Pythagoras:</b> <span class="m">a² + b² = c²</span>, <span class="m">c</span> = longest = opposite 90°. Hypotenuse → ADD. Shorter side → SUBTRACT. Then <b>√</b>.</p>
+<p><b>Converse:</b> longest² = sum of other two squares → right-angled, 90° opposite the longest side. Less than → acute. Greater than → obtuse (obtuse angle opposite the longest side).</p>
+<p style="margin-top:2mm"><b>Show every step. Method marks are real marks. Good luck! 🍀</b></p></div>
+
+</body></html>
